@@ -1,5 +1,10 @@
-{% extends 'base.html' %}
-
+<!DOCTYPE html>
+{% extends "bootstrap/base.html" %}
+{% import "navbar.html" as nav %}
+{% block navbar %}
+    {{ nav }}
+{% endblock navbar %}
 {% block content %}
-    <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
+<a href="/garage"><img src="/static/img/garage_open.png" class="img-responsive" alt="Garage" width="80px"></a>
+
 {% endblock %}
